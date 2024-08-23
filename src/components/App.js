@@ -13,9 +13,9 @@ const DiwaliRelatives = () => {
   return (
     <div>
       <h1>Diwali Visits</h1>
-      <ol key="relativeList">
+      <ol id="relativelist">
         {relatives.map((relative, index) => (
-          <li key={`relativeListItem${index + 1}`}>
+          <li id={`relativeListItem${index + 1}`} key={`relativeListItem${index + 1}`}>
             {relative}
           </li>
         ))}
